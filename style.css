@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Kanit;
+  box-sizing: border-box;
+  transition: all 0.4s ease-out;
+}
+
+.vd {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+nav {
+  width: 85%;
+  z-index: 100;
+  width: 85%;
+  border-bottom: 1px solid white;
+  padding: 14px 10px;
+  background-color: transparent;
+}
+.words {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+ul li {
+  padding: 10px 10px;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0, 110, 255, 0);
+}
+ul li:hover {
+  transition: all 0.4s ease-out;
+  border-bottom: 2px solid rgb(0, 110, 255);
+  transform: scale(1.05);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 18px;
+}
+ul li I {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 20px;
+}
+.logo {
+  padding: 10px 10px;
+  width: 80px;
+  height: 80x;
+}
+body {
+  background-color: black;
+}
+.logo {
+  width: 74px;
+  height: 75px;
+}
+.Istpage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 98vh;
+}
+.texts {
+  flex-direction: column;
+  display: flex;
+  margin: 180px 10px;
+  align-items: start;
+  width: 84%;
+}
+.button button {
+  color: white;
+  background-color: rgb(0, 110, 255);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  top: -150px;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.ther {
+  font-size: 31px;
+  font-weight: 300;
+  font-family: kanit;
+  text-shadow: 2px 2px 2px black;
+  color: white;
+}
+.five {
+  font-size: 230px;
+  position: relative;
+  top: -90px;
+  text-shadow: 2px 2px 2px black;
+  left: 20px;
+  font-weight: 140;
+  color: white;
+}
+.other {
+  position: relative;
+  text-shadow: 2px 2px 2px black;
+
+  top: -150px;
+  font-size: 30px;
+  font-weight: 300;
+  font-family: barlow;
+  color: white;
+}
+.phone-logo {
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  right: 60px;
+  bottom: 140px;
+}
+.phone-logo i {
+  font-size: 20px;
+  padding: 10px;
+}
+.texting {
+  width: 84%;
+  color: white;
+}
+.texting h5 {
+  font-size: 15px;
+  font-weight: 300;
+  text-shadow: 2px 2px 2px black;
+
+  font-family: barlow;
+  color: white;
+}
+.texting h3 {
+  font-size: 35px;
+  font-weight: 320;
+  font-family: barlow;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+.texting h2 {
+  font-size: 45px;
+  text-shadow: 2px 2px 2px black;
+
+  font-weight: 370;
+  font-family: barlow;
+  color: white;
+}
+.button-2 button {
+  color: white;
+  background-color: rgb(0, 110, 255);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button-2 button:hover {
+  transition: all 0.4s ease-out;
+  background-color: rgb(0, 84, 194);
+}
+.button button:hover {
+  transition: all 0.4s ease-out;
+  background-color: rgb(0, 84, 194);
+}
+.second {
+  display: flex;
+  background: url(e.png);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.thrid {
+  padding: 80px 10px 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+}
+.shop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.shop h5 {
+  font-size: 15px;
+  font-weight: 300;
+  font-family: barlow;
+}
+.shop h1 {
+  font-size: 45px;
+  font-weight: 300;
+  font-family: barlow;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card img {
+  width: 400px;
+  height: 150px;
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: barlow;
+}
+
+.card button {
+  color: rgb(32, 32, 32);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(27, 27, 27);
+  padding: 15px 30px;
+  border-radius: 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 44px 2px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.card button:hover {
+  outline: 1px solid black;
+  color: black;
+  transition: all 0.4s ease-out;
+}
+.forth {
+  display: flex;
+  background: url(bg2.png);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  height: 60vh;
+  justify-content: center;
+}
+
+.forth h1 {
+  text-shadow: 2px 2px 2px black;
+
+  color: white;
+  font-size: 43px;
+  font-weight: 380;
+  font-family: barlow;
+}
+
+.forth button {
+  color: rgba(241, 241, 241, 0.829);
+  background-color: rgba(0, 110, 255, 0);
+  border: 1px solid white;
+  padding: 12px 100px;
+  border-radius: 2px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px black;
+  display: inline-block;
+  font-size: 19px;
+  margin: 30px 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.forth button:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.281);
+  outline: 1px solid white;
+  transition: all 0.4s ease-out;
+}
