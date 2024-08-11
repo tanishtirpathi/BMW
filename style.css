@@ -3,12 +3,14 @@
   padding: 0;
   font-family: Kanit;
   box-sizing: border-box;
+  overflow-x: hidden;
   transition: all 0.4s ease-out;
 }
 
 .vd {
   position: absolute;
   top: 0;
+  z-index: 1;
   left: 0;
   width: 100%;
   height: 100vh;
@@ -26,18 +28,21 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-ul {
+nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: hidden;
   list-style-type: none;
 }
-ul li {
+nav ul li {
   padding: 10px 10px;
+
   cursor: pointer;
   border-bottom: 2px solid rgba(0, 110, 255, 0);
 }
-ul li:hover {
+
+nav ul li:hover {
   transition: all 0.4s ease-out;
   border-bottom: 2px solid rgb(0, 110, 255);
   transform: scale(1.05);
@@ -47,14 +52,15 @@ ul li:hover {
   align-items: center;
   justify-content: center;
 }
-ul li a {
+nav ul li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 18px;
 }
-ul li I {
+nav ul li I {
   color: rgb(255, 255, 255);
+  overflow-y: hidden;
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 20px;
@@ -75,14 +81,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 98vh;
+  height: 90vh;
+  overflow-y: hidden;
 }
 .texts {
   flex-direction: column;
   display: flex;
   margin: 180px 10px;
   align-items: start;
+  z-index: 100;
   width: 84%;
+}
+.button {
+  z-index: 100;
 }
 .button button {
   color: white;
@@ -93,8 +104,8 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  position: relative;
-  top: -150px;
+  position: absolute;
+  top: 480px;
   font-size: 18px;
   margin: 4px 2px;
   cursor: pointer;
@@ -130,6 +141,7 @@ body {
   border-radius: 50%;
   position: fixed;
   right: 60px;
+  box-shadow: 0px 0px 10px black;
   bottom: 140px;
 }
 .phone-logo i {
@@ -274,7 +286,6 @@ body {
 
 .forth h1 {
   text-shadow: 2px 2px 2px black;
-
   color: white;
   font-size: 43px;
   font-weight: 380;
@@ -302,4 +313,132 @@ body {
   background-color: rgba(255, 255, 255, 0.281);
   outline: 1px solid white;
   transition: all 0.4s ease-out;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  background-color: rgb(184, 184, 184);
+  justify-content: center;
+  padding: 4% 20px;
+}
+.flex img {
+  width: auto;
+  height: auto;
+}
+.uls {
+  box-shadow: 0px 0px 30px rgb(36, 36, 36);
+  padding: 60px 20px;
+  border-radius: 3px;
+  background-color: rgb(204, 204, 204);
+}
+.uls li {
+  margin: 10px;
+  text-shadow: 2px 2px 2px white;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(1, 7, 8);
+  font-family: monospace;
+}
+.uls h3 {
+  word-spacing: 5px;
+  font-size: 25px;
+  text-shadow: 2px 2px 2px white;
+  font-weight: 400;
+  font-family: barlow;
+}
+
+/* .poster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+/* .poster img {
+  width: 100%;
+  height: auto;
+}
+.poster h5 {
+  font-size: 15px;
+  font-weight: 300;
+  font-family: barlow;
+}
+.poster h1 {
+  font-size: 35px;
+  font-weight: 300;
+  font-family: barlow;
+}
+.poster h4 {
+  font-size: 25px;
+  font-weight: 300;
+  font-family: barlow;
+} */
+
+footer {
+  display: flex;
+  align-items: start;
+
+  justify-content: space-evenly;
+}
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  margin: 10px 20px;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(39, 39, 39);
+}
+
+footer ul li a {
+  color: rgb(46, 46, 46);
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+}
+footer ul li a:hover {
+  color: rgb(2, 2, 2);
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: 1px underline rgb(0, 102, 255);
+}
+.foot {
+  padding: 7% 4%;
+  background-color: rgb(235, 235, 235);
+}
+.foot i {
+  font-size: 25px;
+  cursor: pointer;
+  color: rgb(36, 36, 36);
+  margin: 10px 10px;
+}
+.foot .i {
+  position: relative;
+  bottom: -50px;
+  left: 70px;
+}
+.last {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  background-color: white;
+}
+.a a {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  margin: 0px 10px;
+}
+.a a:hover {
+  color: rgba(6, 59, 139, 0.918);
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  margin: 0px 10px;
 }
